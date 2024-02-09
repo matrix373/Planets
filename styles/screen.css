@@ -1,50 +1,37 @@
+:root {
+    --card-color: #B4B4B4;
+    --planet-color: white;
+    --background-color:#2b2c2c;
+}
+
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+    color: #ffffff;
+    background: #2b2c2c;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
+main {
+    background: #2b2c2c;
+    padding: 0 20px;
+    margin: 0;
     display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
-}
 
 h1 {
-    font-size: 8em;
+    text-align: left;
+    font-size: 4em;
     letter-spacing: -2px;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.maincard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; 
+    background: var(--background-color);
+    border-radius: 20px;
 }
 
-img.about {
-    opacity: 0.5;
-}
