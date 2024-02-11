@@ -5,7 +5,16 @@
     --minicard-background: #333;
     --orange-color: #ff9900;
     --red-color: #cc3300;
+    --jupiter-color: linear-gradient(180deg, rgba(237,135,38,1) 0%, rgba(98,74,35,1) 30%, rgba(237,135,38,1) 50%, rgba(98,74,35,1) 80%, rgba(237,135,38,1) 100%);
+    --mercury-color: linear-gradient(90deg, rgba(135,89,46,1) 0%, rgba(107,91,66,1) 50%);
+    --venus-color: linear-gradient(90deg, rgba(250,177,247,1) 0%, rgba(113,58,140,1) 50%);
+    --earth-color: radial-gradient(circle, rgba(8,172,233,1) 30%, rgba(43,187,42,1) 100%);
+    --mars-color: linear-gradient(157deg, rgba(255,98,0,1) 0%, rgba(177,89,27,1) 50%, rgba(209,38,38,1) 100%);
+    --saturn-color: linear-gradient(148deg, rgba(232,230,58,1) 0%, rgba(232,163,65,1) 30%, rgba(92,54,8,0.8688725490196079) 50%, rgba(232,230,58,1) 60%, rgba(232,163,65,1) 100%);
+    --uranus-color: linear-gradient(0deg, rgba(28,144,209,1) 0%, rgba(181,217,230,1) 20%, rgba(28,144,209,1) 50%, rgba(181,217,230,1) 76%, rgba(28,144,209,1) 100%);
+    --neptun-color: radial-gradient(circle, rgba(139,107,255,1) 0%, rgba(89,64,163,1) 20%, rgba(139,107,255,1) 50%, rgba(89,64,163,1) 76%, rgba(139,107,255,1) 100%);
 }
+   
 
 body {
     font-family: Helvetica, sans-serif;
@@ -39,7 +48,6 @@ h1 {
 .inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-auto-rows: auto; */
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     background: var(--background-color);
@@ -109,47 +117,56 @@ h3 {
 .planet.mercury {
     width: 50px;
     height: 50px;
-    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
+    background-image: var(--mercury-color);
 }
 
 .planet.venus {
     width: 80px;
     height: 80px;
-    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
+    background-image: var(--venus-color);
 }
 
 .planet.jupiter {
     width: 160px;
     height: 160px;
-    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
+    background-image: var(--jupiter-color);
 }
 
 .planet.saturn {
     width: 140px;
     height: 140px;
-    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
+    background-image: var(--saturn-color);
 }
 
 .planet.earth {
     width: 90px;
     height: 90px;
-    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
+    background-image: var(--earth-color);
 }
 
 .planet.mars {
     width: 70px;
     height: 70px;
-    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
+    background-image: var(--mars-color);
 }
 
 .planet.uranus {
     width: 120px;
     height: 120px;
-    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
+    background-image: var(--uranus-color);
 }
 
 .planet.neptun {
     width: 100px;
     height: 100px;
-    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
+    background-image: var(--neptun-color);
 }
+
+.planet:hover {
+    transform: scale(1.2);
+}
+
+.minicard:hover {
+    border: 8px solid white;
+}
+
