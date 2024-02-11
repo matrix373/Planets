@@ -3,6 +3,8 @@
     --planet-color: white;
     --background-color:#2b2c2c;
     --minicard-background: #333;
+    --orange-color: #ff9900;
+    --red-color: #cc3300;
 }
 
 body {
@@ -37,7 +39,8 @@ h1 {
 .inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
+    /* grid-auto-rows: auto; */
+    grid-template-rows: 1fr 1fr;
     gap: 30px;
     background: var(--background-color);
 }
@@ -90,60 +93,63 @@ h3 {
     height: 100px;
     border-radius: 50%;
     background-color: var(--planet-color);
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 
 }
 
 .sun.planet {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    background-color: var(--planet-color);
+    background-image: radial-gradient(var(--orange-color), var(--red-color));
     margin-bottom: 20px;
 }
 
 .planet.mercury {
-    width: 30%;
-    height: 30%;
-    background-color: var(--planet-color);
+    width: 50px;
+    height: 50px;
+    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
 }
 
 .planet.venus {
-    width: 50%;
-    height: 50%;
-    background-color: var(--planet-color);
+    width: 80px;
+    height: 80px;
+    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
 }
 
 .planet.jupiter {
-    width: 150%;
-    height: 150%;
-    background-color: var(--planet-color);
+    width: 160px;
+    height: 160px;
+    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
 }
 
 .planet.saturn {
-    width: 120%;
-    height: 120%;
-    background-color: var(--planet-color);
+    width: 140px;
+    height: 140px;
+    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
 }
 
 .planet.earth {
-    width: 60%;
-    height: 60%;
-    background-color: var(--planet-color);
+    width: 90px;
+    height: 90px;
+    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
 }
 
 .planet.mars {
-    width: 55%;
-    height: 55%;
-    background-color: var(--planet-color);
+    width: 70px;
+    height: 70px;
+    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
 }
 
 .planet.uranus {
-    width: 120%;
-    height: 120%;
+    width: 120px;
+    height: 120px;
+    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
 }
 
 .planet.neptun {
-    width: 120%;
-    height: 120%;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(var(--sun-color1), var(--sun-color2));
 }
